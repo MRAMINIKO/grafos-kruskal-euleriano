@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+		<title>Misión: Red de Subte</title>
+		<link rel="icon" type="image/png" href="/assets/neural.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Special+Elite&family=JetBrains+Mono:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			:root {
+				/* Blueprint (mapa técnico) */
+				--blueprint-bg: #10315c;
+				--blueprint-bg-2: #0c274a;
+				--blueprint-line: rgba(197, 225, 255, 0.16);
+				--blueprint-line-strong: rgba(197, 225, 255, 0.28);
+				--blueprint-ink: #eaf3ff;
+				--blueprint-muted: #8fb4e3;
+
+				/* Papel (ficha de misión) */
+				--paper-bg: #f4ecd8;
+				--paper-bg-2: #ece0c4;
+				--paper-ink: #3a2f22;
+				--paper-muted: #6b5d47;
+				--paper-border: #c9b98f;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			html,
+			body {
+				margin: 0;
+				height: 100%;
+			}
+			body {
+				font-family: "JetBrains Mono", ui-monospace, monospace;
+				color: var(--blueprint-ink);
+				background-color: var(--blueprint-bg);
+				background-image:
+					radial-gradient(ellipse at 20% 15%, var(--blueprint-bg-2), transparent 60%),
+					linear-gradient(var(--blueprint-line) 1px, transparent 1px),
+					linear-gradient(90deg, var(--blueprint-line) 1px, transparent 1px),
+					linear-gradient(var(--blueprint-line-strong) 1px, transparent 1px),
+					linear-gradient(90deg, var(--blueprint-line-strong) 1px, transparent 1px);
+				background-size:
+					100% 100%,
+					20px 20px,
+					20px 20px,
+					100px 100px,
+					100px 100px;
+			}
+			#app {
+				width: 100%;
+				height: 100vh;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script
+			type="module"
+			src="/src/main.ts"
+		></script>
+	</body>
+</html>

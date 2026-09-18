@@ -1,0 +1,22 @@
+{
+	"name": "grafo-visualizacion",
+	"version": "1.0.0",
+	"description": "Visualizador de grafo Kruskal y camino de Euler",
+	"license": "MIT",
+	"author": "",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@types/cytoscape": "^3.21.9",
+		"@types/node": "26.6.1",
+		"typescript": "7.0.2",
+		"vite": "8.3.0"
+	},
+	"dependencies": {
+		"cytoscape": "^3.34.3"
+	}
+}
